@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sweet Boutique Cake Shop</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', Times New Roman;
+      background: linear-gradient(135deg, #d8a7b1, #fce4ec);
+      color: #4a2c2a;
+      text-align: center;
+    }
+
+    /* ---------- Header Section ---------- */
+    header {
+      padding: 40px 20px 20px;
+    }
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #ffffff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+      color: #FFFFFF;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #6d4c41;
+    }
+
+    /* ---------- Section General ---------- */
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    section img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    /* ---------- Social Buttons ---------- */
+    .social-links {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .social-links button {
+      background: linear-gradient(145deg, #c48b9f, #b37a8e);
+      border: none;
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.15),
+                  -4px -4px 8px rgba(255, 255, 255, 0.4);
+    }
+
+    .social-links button:hover {
+      transform: scale(1.1);
+      background: linear-gradient(145deg, #b37a8e, #c48b9f);
+    }
+
+    .social-links img {
+      width: 35px;
+      height: 35px;
+      object-fit: contain;
+      filter: brightness(0) invert(1);
+    }
+
+    /* ---------- Cake Designs Section ---------- */
+    .cake-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .cake-box {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 260px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .cake-box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .cake-box img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .cake-box h3 {
+      background-color: #c48b9f;
+      color: #fff;
+      margin: 0;
+      padding: 12px;
+      font-size: 1.2rem;
+    }
+
+    footer {
+      margin-top: 50px;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.5);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 700px) {
+      .cake-box {
+        width: 90%;
+      }
+      .social-links {
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <!-- Profile Picture -->
+    <img src=sm.jpg alt="Profile Picture" class="profile-pic" />
+
+    <h1>SWEET MOMENTS QATAR</h1>
+    <H2>Sweet Moments The Boutique, Lusail </H2>
+    <p>Handcrafted Cakes • Elegant Design • Unforgettable Taste</p>
+  </header>
+
+  <!-- Main Section -->
+  <section>
+    
+
+    <h2>Our Specialty</h2>
+    <p>
+      At <strong>Sweet Moments </strong>, we create artisanal cakes that combine timeless flavors with modern elegance. 
+      From weddings to birthdays, our cakes make every celebration special.
+      <p>Your Companion for life’s Sweetest Celebrations
+Custom cakes,cupcakes, daily cakes.</p>
+    </p>
+
+    <!-- Social Media Buttons -->
+    <div class="social-links">
+      <button id="facebook" title="Facebook">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook" />
+      </button>
+      <button id="instagram" title="Instagram">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" />
+      </button>
+      <button id="tiktok" title="TikTok">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok" />
+      </button>
+      <button id="whatsapp" title="WhatsApp">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp" />
+      </button>
+      <button id="telegram" title="Telegram">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg" alt="Telegram" />
+      </button>
+    </div>
+  </section>
+
+  <!-- Cake Designs Gallery -->
+  <section>
+    <h2>Our Cake Designs</h2>
+    <div class="cake-gallery">
+      <div class="cake-box">
+        <a href="https://www.instagram.com/p/DPD1FjhDPk4/?img_index=1" target="_blank">
+        <img src="wedding.png" alt="Wedding Cake">
+        <h3>Wedding Cakes</h3>
+      </div>
+      <div class="cake-box">
+        <a href="https://www.instagram.com/p/DQwD-uykbD1/?img_index=1" target="_blank">
+        <img src="birthday.png" alt="Birthday Cake">
+        <h3>Birthday Cakes</h3>
+      </div>
+      <div class="cake-box">
+        <a href="https://www.instagram.com/p/DNm8aDqsTQX/?img_index=1" target="_blank">
+        <img src="shaped.png" alt="Anniversary Cake">
+        <h3>Shaped Cakes</h3>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Sweet Moments the Boutique  — Crafted with love and sugar 🍰
+  </footer>
+
+  <!-- JS for Social Links -->
+  <script>
+    const links = {
+      facebook: "https://www.facebook.com/sweetmomentsdoha/?ref=_xav_ig_profile_page_web",
+      instagram: "https://www.instagram.com/sweetmomentsq/",
+      tiktok: "https://www.tiktok.com/@sweetmomentsq?fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnd8posBhEkJsgA2y78T3Zs9m7PojUcG5z-Dn9CRG-BCEp693w0i1qQQ7UVs0_aem_HkWcXDUbfpxhAG9F94SYQQ",
+      whatsapp: "https://wa.me/97433885553",
+      telegram: "https://t.me/yourusername"
+    };
+
+    for (const [id, url] of Object.entries(links)) {
+      const btn = document.getElementById(id);
+      if (btn) {
+        btn.addEventListener("click", () => window.open(url, "_blank"));
+      }
+    }
+  </script>
+
+</body>
+</html>
